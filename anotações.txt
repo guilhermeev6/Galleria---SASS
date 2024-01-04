@@ -1,0 +1,3 @@
+npm install -g sass - Instala o Sass. (Uma vez instalado, pode ser usado em todos os projetos)
+
+sass --watch <LOCAL DO ARQUIVO SASS>:<ARQUIVO CSS QUE VAI SER GERADO> - Observa todas as alterações no sass e compila no arquivo css criado. (se não existir o arquivo css, ele cria)   
