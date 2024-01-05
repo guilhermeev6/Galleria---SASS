@@ -1,3 +1,21 @@
 npm install -g sass - Instala o Sass. (Uma vez instalado, pode ser usado em todos os projetos)
 
-sass --watch <LOCAL DO ARQUIVO SASS>:<ARQUIVO CSS QUE VAI SER GERADO> - Observa todas as alterações no sass e compila no arquivo css criado. (se não existir o arquivo css, ele cria)   
+sass --watch <LOCAL DO ARQUIVO SASS>:<ARQUIVO CSS QUE VAI SER GERADO> - Observa todas as alterações no sass e compila no arquivo css criado. (se não existir o arquivo css, ele cria)
+
+
+
+
+Todo  arquivo separado que será referenciado em outro precisa ter o '_' antes 
+
+@use '<NOME DO ARQUIVO SEMO "_" E ".SASS">' - Implementa arquivo em outro.
+
+$<NOME DA VARIÁVEL> - Cria variável.
+
+<NOME DO USE>.$<ITEM DA USE> - Puxa o valor de uma variável da use.
+
+@mixin <NOME DO MIXIN>
+    <CÓDIGO CSS> - O que for escrito em css pode ser utilizado em qualquer arquivo.
+
+@include <NOME DA USE><NOME DO MIXIN> - Inclui no código um código pré definido.
+
+&-.<CLASSE FILHO> - Referencia uma classe filho dentro do código do pai.
